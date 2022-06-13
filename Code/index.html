@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>United Student Education</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+        href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <style type="text/css">
+        #mc_embed_signup {
+          background: #fff;
+          clear: left;
+          font: 14px Roboto, Arial, sans-serif;
+        }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+  </head>
+  <!-- Added Java Script Code for Drop down Navigation bar.-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
+
+
+  <div id="overall-container">
+
+    <header>
+      <div class="container" style="padding-bottom: 10px;">
+        <nav>
+          <h1 class="brand">United-Student Education</h1>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <div class="parent">
+              <div class="dropdown" onclick="document.getElementById('dropD').style.display='block'" onmouseover="document.getElementById('dropD').style.display='block'" onmouseout="document.getElementById('dropD').style.display='none'">
+              <a class="dropbtn" href="#">About</a>
+              
+            </div>
+          </div>
+          <div class="dropdown-content" id="dropD"  onmouseover="document.getElementById('dropD').style.display='block'" onmouseout="document.getElementById('dropD').style.display='none'" >
+            <a href="AboutGetInvolved.html">Get Involved</a>
+            <a href="AboutMissionStatement.html">Mission</a>
+            <a href="AboutTeam.html">Team</a>
+          </div>
+            </li>
+            
+            <li>
+              <div class="parent">
+              <div class="dropdown" onclick="document.getElementById('dropC').style.display='block'" onmouseover="document.getElementById('dropC').style.display='block'" onmouseout="document.getElementById('dropC').style.display='none'">
+              <a class="dropbtn" href="#">Projects</a>
+              
+            </div>
+          </div>
+          <div class="dropdown-content" id="dropC"  onmouseover="document.getElementById('dropC').style.display='block'" onmouseout="document.getElementById('dropC').style.display='none'" >
+            <a href="projects.html">Projects</a>
+            <a href="projectHighlights.html">Project Highlights</a>
+          </div>
+            </li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="MainEvents.htm">Events</a></li>
+            <li><a href="Contact.html" id="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mobile-container-1">
+
+        <!-- <a href="#home" class="active">United Student-Education</a> -->
+        <div class="topnav">
+            <div id="nav1">
+                <h1 class="brand">USE</h1>
+            </div>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="AboutGetInvolved.html">About</a>
+                <a href="AboutMissionStatement.html">Mission</a>
+                <a href="AboutTeam.html">Team</a>
+                <a href="projects.html">Projects</a>
+                <a href="projectHighlights.html">Projects Highlights</a>
+                <a href="Resources.html">Resources</a>
+                <a href="MainEvents.htm">Events</a>
+                
+                <a href="Contact.html">Contact</a>
+            </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </div>
+
+    
+    </header>
+
+    <style>
+
+
+.parent{
+          padding-left: 3rem;
+         }
+          .dropdown {
+            float: left;
+            overflow: hidden;
+  padding-right: 0;
+  margin-right: 0;
+ 
+}
+          .dropbtn{
+            padding: 0  0;
+    margin: 0 0;
+    padding-left: 0;
+          }
+
+          .dropdown-content {
+            display: none;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            position: absolute;
+           padding-left: 0;
+          
+          }
+
+          .dropdown-content a {
+            float: none;
+            color: white;
+           padding-bottom: 3px;
+           padding-top: 7px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          .dropdown-content a:hover{
+            background-color: black;
+            color:white;
+          }
+        
+
+          .dropdown:hover .dropdown-content {
+            display: block;
+            margin-right: 3rem;
+          }
+
+
+      @media screen and (max-width: 750px){
+  /*new Stuff*/
+  nav{display: none;}
+
+  .icons{
+    display:inline-block
+}
+
+
+.each-icon img {
+  height: 350px;
+}
+/*
+img{
+  height:none;
+}
+.project-image{
+  object-fit:none;
+}
+*/
+
+  .mobile-container-1 {
+    display: block;
+    margin: auto;
+    color: black;
+  }
+
+  .topnav {
+    overflow: hidden;
+    position: relative;
+   /*background-color: white;*/
+  }
+
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+    color:black;
+    background-color: white;
+  }
+  .topnav #nav1{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+
+  /*  font-size: 1.3rem;
+  letter-spacing: 4px;
+	font-weight: 300;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+     */
+  }
+
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+
+  }
+
+
+  .topnav a.icon {
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*background-color: white;*/
+  }
+
+  .topnav a:hover {
+    color: burlywood;
+  }
+
+  .active {
+    color: red;
+  }
+
+}
+    </style>
+
+    <div class="our-mission">
+      <h2>Our Mission</h2>
+      <hr id="hr-color" />
+      <p class="our-mission">
+        <strong>
+          USE was founded in efforts to reduce academic disparities in college
+        </strong>
+      </p>
+      <p>
+        USE is a new student organization on campus dedicated to bettering
+        incoming student's educational experiences at college through
+        semester-long computer science projects. We understand how difficult it
+        can be adapting to challenging academic surroundings, and that's why we
+        believe it's important to increase open access to the educational
+        resources at the University of Minnesota. We aspire to ensure students
+        don't need to look too far to find a strong support network.
+      </p>
+      <div id="learn-more"><strong> Learn More! </strong></div>
+    </div>
+
+    <hr id="hr-separate" />
+    <div class="our-mission">
+      <h2>Projects</h2>
+      <p style="margin-top: 20px;">
+        United Student Education gives university students the opportunity to
+        provide other students a support structure through the wonders of
+        computer science. Check out some of our recent stuff!
+      </p>
+      <section class="icons">
+        <div class="each-icon">
+          <a href="penpal.html"
+            ><img 
+              class="project-image"
+              src="pen_pal.png"
+          /></a>
+          <p style="font-size: 24px;"><strong> Pen Pal </strong></p>
+        </div>
+        <div class="each-icon">
+          <a href="BLM.html"
+            ><img
+              class="project-image"
+              src="BLM.jpeg"
+          /></a>
+          <p style="font-size: 24px;"><strong> BLM </strong></p>
+        </div>
+        <div class="each-icon">
+          <a href="betterdays.html"
+            ><img
+              class="project-image"
+              src="better_days.png""
+          /></a>
+          <p style="font-size: 24px;"><strong> Better Days </strong></p>
+        </div>
+      </section>
+      <div id="learn-more"><strong> <a href="projects.html">See More!</a></strong></div>
+    </div>
+    <hr id="hr-separate" />
+
+    <div class="our-mission">
+      <h2>What We Offer</h2>
+      <hr id="hr-color" />
+    </div>
+    <section class="icons">
+      <div class="each-icon">
+        <i class="fa fa-heart fa-5x"></i>
+        <p style="font-size: 24px;"><strong> Strong Community </strong></p>
+        <p>
+          <strong>
+            A strong and supportive community fostering cooperation among each
+            other
+          </strong>
+        </p>
+      </div>
+      <div class="each-icon">
+        <i class="fa fa-users fa-5x"></i>
+        <p style="font-size: 24px;"><strong> Resource Network </strong></p>
+        <p>
+          <strong>
+            A wide variety of university course-specific resources available to
+            all university students
+          </strong>
+        </p>
+      </div>
+      <div class="each-icon">
+        <i class="fa fa-tv fa-5x"></i>
+        <p style="font-size: 24px;"><strong> Holistic Advising </strong></p>
+        <p>
+          <strong>
+            A free advising network for students to connect and hear from other
+            students
+          </strong>
+        </p>
+      </div>
+    </section>
+
+    <hr id="hr-separate" />
+
+    <div class="our-mission">
+      <h2>Check us Out!</h2>
+      <hr id="hr-color" />
+      <p class="our-mission">
+        Enter your email to subscribe to our mailing list to get regular updates
+        from us regarding new projects, opportunities, and events!
+      </p>
+      <!--<label id="icon" for="name"><i class="fa fa-envelope"></i></label>-->
+      <!-- Begin Mailchimp Signup Form -->
+
+      <div id="mc_embed_signup">
+        <form
+          action="https://gmail.us17.list-manage.com/subscribe/post?u=123055d38a093c113b3f21a8d&amp;id=62dde9495c"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+
+            <div class="mc-field-group">
+              <label for="mce-EMAIL" style="font-family: Roboto;"
+                ><strong>Email Address</strong> <span class="asterisk">*</span>
+              </label>
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="required email"
+                id="mce-EMAIL"
+              />
+            </div>
+            <div id="mce-responses" class="clear">
+              <div
+                class="response"
+                id="mce-error-response"
+                style="display: none;"
+              ></div>
+              <div
+                class="response"
+                id="mce-success-response"
+                style="display: none; color: black; font-weight: bold;"
+              ></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input
+                type="text"
+                name="b_123055d38a093c113b3f21a8d_62dde9495c"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+            <div class="clear" style="align-items: center; margin: auto;">
+              <input
+                type="submit"
+                value="Subscribe"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="button"
+                style="font-family: Roboto; background-color: burlywood; font-weight: bold; text-align: center; align-content: center;"
+
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <script
+        type="text/javascript"
+        src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+      ></script>
+      <script type="text/javascript">
+        (function ($) {
+          window.fnames = new Array();
+          window.ftypes = new Array();
+          fnames[0] = "EMAIL";
+          ftypes[0] = "email";
+          fnames[1] = "FNAME";
+          ftypes[1] = "text";
+          fnames[3] = "ADDRESS";
+          ftypes[3] = "address";
+          fnames[4] = "PHONE";
+          ftypes[4] = "phone";
+        })(jQuery);
+        var $mcj = jQuery.noConflict(true);
+      </script>
+      <!--End mc_embed_signup-->
+    </div>
+
+    <footer>&copy; Copyright 2020 United Student Education</footer>
+  </div>
+</html>

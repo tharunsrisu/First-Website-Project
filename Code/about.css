@@ -1,0 +1,102 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50px;
+  /* object-fit: cover; */
+  }
+
+hr {
+  display: block;
+  margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    border-color: BurlyWood
+}
+
+p { /*Assign DIvs new classes and then pply everything below for them*/
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: burlywood;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 15px;
+  height: 30px;
+  font-size: 18px
+}
+  
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+  justify-items: center;
+
+
+}
+
+.team-image {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+}
+  
+h2 {
+  display: block;
+  font-size: 3em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif
+  }
+  
+.mission-images {
+  display: block;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto
+}
+
+.main {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 750px){
+  .team-grid {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+  
+  
+  }
+
+  .team-image{
+    display:flex;
+    max-width: 100%;
+  }
+  .main {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 64px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+}
