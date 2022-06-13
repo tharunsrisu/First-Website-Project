@@ -1,0 +1,148 @@
+.project-header {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 175%;
+}
+
+.project-header h2 {
+    padding-bottom: 13px;
+}
+
+.project-grid {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding-bottom: 0px;
+}
+
+.project-cell {
+  position: relative;
+  margin: 20px;
+  border: 5px solid lightgrey;
+  width: 300px;
+  height: 150px;
+  transition-property: width, height;
+  transition:all 0.3s;
+}
+
+.project-cell:hover {
+    transition:all 0.3s;
+    width: 325px;
+    height: 175px;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-delay: 2s;
+  transition:all 0.3s;
+}
+
+.project-title {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  height: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  /*background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));*/
+}
+
+.project-title h3 {
+    color: black;
+    font-weight: bolder;
+}
+
+.project-cell:hover .description{
+    opacity: 0.75;
+    background-color: black;
+    transition-delay: 2s;
+    transition:all 0.3s;
+}
+
+.project-cell:hover .description p {
+    opacity: 1;
+    color: lightgray;
+    text-align: center;
+    transition-delay: 2s;
+    transition:all 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  /*Copy paste code below in every css file and remove about.css file link*/
+
+  
+.mission-images {
+  display: block;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto
+}
+
+.main {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 750px){
+  .team-grid {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+  
+  
+  }
+
+  .team-image{
+    display:flex;
+    max-width: 100%;
+  }
+  .main {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 64px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+}
